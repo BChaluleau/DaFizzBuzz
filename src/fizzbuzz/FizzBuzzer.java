@@ -9,6 +9,7 @@ public class FizzBuzzer {
 
 	public String next() {
 		if (tour == MAGIC_NUMBER) {
+			tour++;
 			return MAGIC_KEY;
 		}
 		return String.format("%d", tour++);
