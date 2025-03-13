@@ -41,6 +41,12 @@ class FizzBuzzerTest {
 		assertEquals("8", jeu.next());
 	}
 
+	@Test
+	void testPremierBuzz() {
+		preshot(4);
+		assertEquals("buzz", jeu.next());
+	}
+
 	private void preshot(int nbOfTurns) {
 		for (int i = 0; i < nbOfTurns; i++) {
 			jeu.next();
